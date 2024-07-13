@@ -1,0 +1,20 @@
+/* Root Variables */
+:root {
+    --dental-color-font: #0fe49a;
+    --health-color-font: #00cdff;
+    --font-josefin-sans: 'Josefin Sans';
+}
+
+/* Imagotype Styles */
+
+.dental-text-color {
+    color: var(--dental-color-font);
+    font-family: var(--font-josefin-sans), sans-serif;
+    font-weight: 600;
+}
+
+.health-text-color {
+    color: var(--health-color-font);
+    font-family: var(--font-josefin-sans), sans-serif;
+    font-weight: 600;
+}
