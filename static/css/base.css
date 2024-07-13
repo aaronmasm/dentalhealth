@@ -7,6 +7,15 @@
 
 /* Imagotype Styles */
 
+.align-middle {
+    vertical-align: middle;
+}
+
+.dental-isotype {
+    height: 2.5em;
+    margin-right: 0.2em;
+}
+
 .dental-text-color {
     color: var(--dental-color-font);
     font-family: var(--font-josefin-sans), sans-serif;
