@@ -13,12 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
     <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41ba89782b.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="py-2 border-bottom">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 text-end schedule text-muted">
+            <div class="col-lg-12 col-md-12 text-center text-lg-end schedule text-muted">
                 <span class="schedule-title">Schedule:</span> Monday to Friday -
                 9:00 a.m. to 7:00 p.m. / Saturday - 9:00 a.m. to 1:00 p.m
             </div>
@@ -38,16 +39,15 @@
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">About Us</a>
-                <a class="nav-link" href="#">Services</a>
-                <a class="nav-link" href="#">Specialties</a>
-                <a class="nav-link" href="#">Dentists</a>
-                <a class="nav-link" href="#">Clinics</a>
-                <a class="nav-link" href="#">Contact
-                </a>
+            <div class="navbar-nav nav-pills">
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Home</a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-flag"></i> About Us</a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-stethoscope"></i> Services</a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-star"></i> Specialties</a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-user-doctor"></i> Dentists</a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-location-dot"></i> Clinics</a>
             </div>
         </div>
     </div>
