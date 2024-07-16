@@ -1,8 +1,9 @@
 /* Root Variables */
 :root {
-    --dental-color-font: #0fe49a;
-    --health-color-font: #00cdff;
-    --font-josefin-sans: 'Josefin Sans';
+    --dental-color-font: #0fe49a !important;
+    --health-color-font: #00cdff !important;
+    --imagotype-font: 'Josefin Sans';
+    --base-font: 'Raleway';
 }
 
 /* Imagotype Styles */
@@ -14,12 +15,22 @@
 
 .dental-text-color {
     color: var(--dental-color-font);
-    font-family: var(--font-josefin-sans), sans-serif;
+    font-family: var(--imagotype-font), sans-serif;
     font-weight: 600;
 }
 
 .health-text-color {
     color: var(--health-color-font);
-    font-family: var(--font-josefin-sans), sans-serif;
+    font-family: var(--imagotype-font), sans-serif;
     font-weight: 600;
+}
+
+.schedule {
+    font-family: var(--base-font), sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.schedule-title {
+    color: var(--health-color-font);
 }
