@@ -41,6 +41,10 @@
     --bs-nav-pills-link-active-bg: var(--health-color-font);
 }
 
-.nav .nav-link {
+.nav-link {
     color: #60646d;
+}
+
+.nav-link:hover {
+    color: var(--health-color-font);
 }
