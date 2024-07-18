@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "pages.apps.PagesConfig",
 ]
 
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -53,7 +54,9 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+
 ROOT_URLCONF = "dentalhealth_main.urls"
+
 
 TEMPLATES = [
     {
@@ -73,6 +76,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = "dentalhealth_main.wsgi.application"
 
@@ -124,6 +128,7 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 STATICFILES_DIRS = [BASE_DIR / "static"]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

@@ -37,7 +37,7 @@
 
 /* Navbar */
 .nav-pills .nav-link.active {
-    color: #ffffff !important; /* Color blanco */
+    color: white !important;
     --bs-nav-pills-link-active-bg: var(--health-color-font);
 }
 
