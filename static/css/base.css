@@ -48,3 +48,9 @@
 .nav-link:hover {
     color: var(--health-color-font);
 }
+
+/* Icons */
+.footer-icons {
+    width: 30px;
+    height: 24px;
+}
