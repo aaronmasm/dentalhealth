@@ -31,7 +31,7 @@
     font-size: 15px;
 }
 
-.schedule-title {
+.schedule-title-color-font {
     color: var(--health-color-font);
 }
 
@@ -53,4 +53,9 @@
 .footer-icons {
     width: 30px;
     height: 24px;
+}
+
+/* Main Styles */
+.subtitles {
+    color: #3a3c41;
 }
