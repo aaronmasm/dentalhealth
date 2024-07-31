@@ -1,9 +1,11 @@
 /* Root Variables */
 :root {
-    --dental-color-font: #0fe49a !important;
-    --health-color-font: #00cdff !important;
-    --imagotype-font: 'Josefin Sans';
-    --base-font: 'Raleway';
+    --dental-color-font: #0fe49a;
+    --health-color-font: #00cdff;
+    --imagotype-font: 'Josefin Sans', sans-serif;
+    --base-font: 'Raleway', sans-serif;
+    --nav-link-color: #60646d;
+    --subtitle-color: #3a3c41;
 }
 
 /* Imagotype Styles */
@@ -12,16 +14,18 @@
     margin-right: 0.2em;
 }
 
-.dental-text-color {
-    color: var(--dental-color-font);
+.dental-text-color,
+.health-text-color {
     font-family: var(--imagotype-font), sans-serif;
     font-weight: 600;
 }
 
+.dental-text-color {
+    color: var(--dental-color-font);
+}
+
 .health-text-color {
     color: var(--health-color-font);
-    font-family: var(--imagotype-font), sans-serif;
-    font-weight: 600;
 }
 
 /* Schedule Bar */
@@ -42,7 +46,7 @@
 }
 
 .nav-link {
-    color: #60646d;
+    color: var(--nav-link-color);
 }
 
 .nav-link:hover {
@@ -57,5 +61,5 @@
 
 /* Main Styles */
 .subtitles {
-    color: #3a3c41;
+    color: var(--subtitle-color);
 }
