@@ -1,0 +1,65 @@
+/* Root Variables */
+:root {
+    --dental-color-font: #0fe49a;
+    --health-color-font: #00cdff;
+    --imagotype-font: 'Josefin Sans', sans-serif;
+    --base-font: 'Raleway', sans-serif;
+    --nav-link-color: #60646d;
+    --subtitle-color: #3a3c41;
+}
+
+/* Imagotype Styles */
+.dental-isotype {
+    height: 2.5em;
+    margin-right: 0.2em;
+}
+
+.dental-text-color,
+.health-text-color {
+    font-family: var(--imagotype-font), sans-serif;
+    font-weight: 600;
+}
+
+.dental-text-color {
+    color: var(--dental-color-font);
+}
+
+.health-text-color {
+    color: var(--health-color-font);
+}
+
+/* Schedule Bar */
+.schedule {
+    font-family: var(--base-font), sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.schedule-title-color-font {
+    color: var(--health-color-font);
+}
+
+/* Navbar */
+.nav-pills .nav-link.active {
+    color: white !important;
+    --bs-nav-pills-link-active-bg: var(--health-color-font);
+}
+
+.nav-link {
+    color: var(--nav-link-color);
+}
+
+.nav-link:hover {
+    color: var(--health-color-font);
+}
+
+/* Icons */
+.footer-icons {
+    width: 30px;
+    height: 24px;
+}
+
+/* Main Styles */
+.subtitles {
+    color: var(--subtitle-color);
+}

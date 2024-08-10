@@ -2,16 +2,23 @@
 :root {
     --dental-color-font: #0fe49a;
     --health-color-font: #00cdff;
-    --imagotype-font: 'Josefin Sans', sans-serif;
-    --base-font: 'Raleway', sans-serif;
+    --imagotype-font: 'Josefin Sans';
+    --base-font: 'Raleway';
     --nav-link-color: #60646d;
     --subtitle-color: #3a3c41;
+    --base-font-size: 16px;
+}
+
+/* Global Styles */
+* {
+    font-family: var(--base-font), sans-serif;
+    font-size: var(--base-font);
 }
 
 /* Imagotype Styles */
 .dental-isotype {
-    height: 2.5em;
-    margin-right: 0.2em;
+    height: 2.5rem;
+    margin-right: 0.2rem;
 }
 
 .dental-text-color,
@@ -32,7 +39,7 @@
 .schedule {
     font-family: var(--base-font), sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 .schedule-title-color-font {
@@ -41,7 +48,7 @@
 
 /* Navbar */
 .nav-pills .nav-link.active {
-    color: white !important;
+    color: white;
     --bs-nav-pills-link-active-bg: var(--health-color-font);
 }
 
@@ -55,11 +62,25 @@
 
 /* Icons */
 .footer-icons {
-    width: 30px;
-    height: 24px;
+    width: 1.875rem;
+    height: 1.5rem;
 }
 
 /* Main Styles */
 .subtitles {
     color: var(--subtitle-color);
+}
+
+/* WhatsApp Button */
+#whatsapp {
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    z-index: 9999;
+}
+
+@media (min-width: 768px) and (max-width: 863px) {
+    #whatsapp {
+        bottom: 8rem;
+    }
 }

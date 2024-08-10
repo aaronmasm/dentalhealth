@@ -1,5 +1,88 @@
 {% extends "base.html" %}
-{% block title %}About Us{% endblock title %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block app_css %}
+    <!-- Link to the specific CSS file for this page -->
+    <link href="{% static 'pages/css/pages.css' %}" rel="stylesheet">
+{% endblock %}
+
 {% block content %}
-    <h1>About Us</h1>
+    <!-- Main container for the page content -->
+    <div class="container my-5">
+
+        <!-- Banner section for the "About Us" page -->
+        <section class="banner text-center p-5 text-black bg-primary rounded">
+            <h1 class="display-4">About Us</h1>
+            <p class="lead">Learn more about our dental clinic and our services.</p>
+        </section>
+
+        <!-- Main content section -->
+        <div class="row my-5">
+            <!-- Left column for history and image -->
+            <section class="col-lg-6">
+                <p class="fs-4 mb-4">
+                    Thanks to the trust of thousands of patients and the recognition of the most important entities in
+                    the field, today DentalHealth is the leading clinic in America.
+                </p>
+                <figure>
+                    <a href="#" target="_blank">
+                        <img class="img-fluid rounded mb-4"
+                             src="{% static 'pages/img/happy-male-dentist.jpg' %}"
+                             alt="">
+                    </a>
+                </figure>
+                <h2 class="h4 dental-text-color">History</h2>
+                <p class="mt-2">In 1969, Dr. John Doe established a dental office in the district of Riverdale.
+                    His son, Dr. James Doe, joined him 10 years later. Together they started the project of
+                    implementing a dental care system different from those that existed at that time, incorporating the
+                    latest technological advances and the best quality service.</p>
+                <p>Such was the initial success that the same patients, who came from distant districts, motivated the
+                    opening of other offices. First in Midtown (1986), then in Uptown (1991), later in Downtown (1997),
+                    and in Westside (2002). The most recent locations are in Eastside, Northwood, and Southridge.</p>
+                <p>At the same time, the tradition of DentalHealth has continued. Dr. Jane Doe joined the team of
+                    more than 100 doctors, assistants, and administrators that made up the DentalHealth family a few
+                    years ago.</p>
+            </section>
+
+            <!-- Right column for pillars -->
+            <section class="col-lg-6">
+                <h2 class="h4"><span class="dental-text-color">Dental</span><span
+                        class="health-text-color">Health</span> Pillars</h2>
+                <article class="mt-3">
+                    <h3 class="h5 health-text-color">Mission</h3>
+                    <p>To deliver exceptional dental care and superior service, ensuring the highest standards of
+                        patient satisfaction and trust.</p>
+                </article>
+
+                <article class="mt-5">
+                    <h3 class="h5 health-text-color">Vision</h3>
+                    <p>To become the foremost dental care provider in the region, leveraging cutting-edge technology and
+                        a dedicated team of skilled professionals to promote optimal oral health and well-being.</p>
+                </article>
+
+                <article class="mt-5">
+                    <h3 class="h5 health-text-color">Quality Policy</h3>
+                    <p>At DentalHealth, we strive to exceed patient expectations by fostering a culture of continuous
+                        improvement, advancing our professional expertise, and embracing the latest innovations in
+                        dental technology.</p>
+                </article>
+
+                <article class="mt-5">
+                    <h3 class="h5 health-text-color">Values</h3>
+                    <p>DentalHealth upholds core values of Integrity, Compassion, Excellence, Innovation, and Respect.
+                        These principles are integral to our commitment to providing exceptional care and service.</p>
+                </article>
+
+                <article class="mt-5">
+                    <h3 class="h5 health-text-color">Social Responsibility</h3>
+                    <p>DentalHealth is dedicated to supporting community welfare and environmental sustainability. We
+                        actively engage in initiatives that support local communities, protect vulnerable populations,
+                        and promote overall well-being.</p>
+                </article>
+            </section>
+
+        </div>
+    </div>
 {% endblock %}

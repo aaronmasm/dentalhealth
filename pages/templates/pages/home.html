@@ -1,9 +1,13 @@
 {% extends "base.html" %}
 {% load static %}
 {% block title %}Home{% endblock title %}
+
 {% block content %}
+    <!-- Carousel Section -->
     <div id="carouselCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <!-- Carousel Indicators -->
         <div class="carousel-indicators">
+            <!-- Each button represents an indicator for a slide -->
             <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1"
@@ -11,51 +15,63 @@
             <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
         </div>
+
+        <!-- Carousel Inner: Contains slides -->
         <div class="carousel-inner">
+            <!-- First Slide -->
             <div class="carousel-item active">
-                <img src="{% static 'pages/img/carousel/close-up-dentist.jpg' %}" class="d-block w-100" alt="...">
+                <img src="{% static 'pages/img/carousel/close-up-dentist.jpg' %}" class="d-block w-100"
+                     alt="Close-up dentist image">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="fw-bold">Your smile is our motivation</h5>
-                    <p class="fw-medium">More than 20 years and thousands of smiles around Peru support us as the first
-                        and best Dental Clinic in the country, see for yourself!</p>
+                    <p class="fw-medium">With over 20 years of experience and thousands of satisfied smiles across
+                        America, we pride ourselves on being one of the leading dental clinics in the country. Come and
+                        see the difference for yourself!</p>
                 </div>
             </div>
+            <!-- Second Slide -->
             <div class="carousel-item">
-                <img src="{% static 'pages/img/carousel/dentist-standing.jpg' %}" class="d-block w-100" alt="...">
+                <img src="{% static 'pages/img/carousel/dentist-standing.jpg' %}" class="d-block w-100"
+                     alt="Dentist standing image">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="fw-bold">The best professionals</h5>
                     <p class="fw-medium">We have the best dentists in the city.</p>
                 </div>
             </div>
+            <!-- Third Slide -->
             <div class="carousel-item">
-                <img src="{% static 'pages/img/carousel/patient-dentist.jpg' %}" class="d-block w-100" alt="...">
+                <img src="{% static 'pages/img/carousel/patient-dentist.jpg' %}" class="d-block w-100"
+                     alt="Patient with dentist image">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="fw-bold">The best dental technologies</h5>
                     <p class="fw-medium">We have the best instruments and technologies for good dental work.</p>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions"
-                data-bs-slide="prev">
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions"
-                data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
 
+    <!-- Main Content Section -->
     <div class="container pt-5 pb-4">
         <div class="row justify-content-center">
+            <!-- Introduction Section -->
             <div class="col-lg-4 col-md-8 col-sm-12 mb-4">
                 <div class="d-flex flex-column align-items-center text-center justify-content-start">
-                    <h2 class="subtitles fw-normal mb-4">
+                    <h1 class="subtitles fw-normal mb-4">
                         DentalHealth <span class="fw-bold">Your Trusted Dental Clinic</span>
-                    </h2>
-                    <p class="text-justify mb-4">More than 20 years and thousands of smiles around Peru support us as
-                        the first and best Dental Clinic in the country, see for yourself!</p>
+                    </h1>
+                    <p class="mb-4">With over 20 years of dedication and countless smiles across the USA, we are proud
+                        to be recognized as a leading dental clinic. Experience our commitment to excellence
+                        firsthand!</p>
                     <div class="w-100 w-md-75 w-lg-50 mx-auto">
                         <button type="button" class="btn btn-danger w-100 py-3">
                             <a class="text-white fw-bold fs-5 text-decoration-none" href="#">
@@ -65,15 +81,18 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Additional Information Section -->
             <div class="col-lg-8 col-md-10 col-sm-12 mt-4 mt-lg-0">
                 <div class="row">
+                    <!-- Specialty Card -->
                     <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
                         <div class="d-flex align-items-start">
                             <i class="fa fa-medkit fa-3x me-3 schedule-title-color-font"></i>
                             <div>
                                 <h3>
                                     <a class="text-decoration-none subtitles fw-bold mb-4"
-                                       href="https://www.multident.pe/site/servicios/especialidades/">
+                                       href="#">
                                         Learn about our Specialties
                                     </a>
                                 </h3>
@@ -82,40 +101,48 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- 24-Hour Attention Card -->
                     <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
                         <div class="d-flex align-items-start">
                             <i class="fa fa-ambulance fa-3x me-3 schedule-title-color-font"></i>
                             <div>
                                 <h3>
                                     <a class="text-decoration-none subtitles fw-bold mb-4"
-                                       href="https://www.multident.pe/site/servicios/emergencias/">
+                                       href="#">
                                         24-Hour Attention
                                     </a>
                                 </h3>
-                                <p>Call us at 948582559 or (01) 277-3027 and visit us at Av. Angamos Este 156 -
-                                    Miraflores at any time, every day.</p>
+                                <p>Call us at +1 (555) 123-4567 or (555) 987–6543 and visit us at 123 Main Street,
+                                    Anytown, USA at any time, every day.
+                                </p>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Locations Card -->
                     <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
                         <div class="d-flex align-items-start">
                             <i class="fa fa-building-o fa-3x me-3 schedule-title-color-font"></i>
                             <div>
                                 <h3>
                                     <a class="text-decoration-none subtitles fw-bold mb-4"
-                                       href="https://www.multident.pe/site/sedes/">47 Locations and Counting</a>
+                                       href="#">47 Locations and Counting</a>
                                 </h3>
-                                <p>Throughout Peru, we grow year after year, seeking to be closer to you every day.</p>
+                                <p>Throughout the USA, we grow year after year, seeking to be closer to you every
+                                    day.</p>
                             </div>
                         </div>
                     </div>
+
+                    <!-- DentalHealth-Card Card -->
                     <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
                         <div class="d-flex align-items-start">
                             <i class="fa fa-credit-card fa-3x me-3 schedule-title-color-font"></i>
                             <div>
                                 <h3>
                                     <a class="text-decoration-none subtitles fw-bold mb-4"
-                                       href="https://www.multident.pe/site/servicios/multident-card/">DentalHealth
+                                       href="#">DentalHealth
                                         Card</a>
                                 </h3>
                                 <p>Start enjoying multiple benefits for you and six family members, sign up at all our
