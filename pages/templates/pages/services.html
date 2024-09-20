@@ -1,5 +1,107 @@
 {% extends "base.html" %}
-{% block title %}Services{% endblock title %}
+{% load static %}
+
+{% block title %}Services{% endblock %}
+
+{% block app_css %}
+    <!-- Link to the specific CSS file for this page -->
+    <link href="{% static 'pages/css/pages.css' %}" rel="stylesheet">
+{% endblock %}
+
 {% block content %}
-    <h1>Services</h1>
+    <!-- Main container for the page content -->
+    <div class="container my-5">
+
+        <!-- Banner section for the "Services" page -->
+        <section class="banner services-banner text-black-50 text-center p-5 bg-primary rounded">
+            <h1 class="display-4 fw-normal">Services</h1>
+            <p class="lead fw-normal">Learn more about our services.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section class="my-5">
+            <div class="row">
+                <!-- Emergency Services -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="{% static 'pages/img/emergency-dentist.jpg' %}" class="card-img-top"
+                             alt="Emergency Services">
+                        <div class="card-body">
+                            <h3 class="card-title">Emergency Services</h3>
+                            <p class="card-text">Being prepared for dental emergencies is crucial. Knowing what to do
+                                when an accident happens can make the difference between losing or saving teeth.</p>
+                            <p class="card-text">Any injury to your teeth or gums can be serious. Ignoring dental pain
+                                can lead to more extensive and costly treatments. At any time, any day of the year, your
+                                dental health is protected. A DentalHealth doctor will attend to you in the event of an
+                                emergency at our 123 Main Street, Anytown, location.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dental Plan -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="{% static 'pages/img/dental-plan.jpg' %}" class="card-img-top" alt="Dental Plan">
+                        <div class="card-body">
+                            <h3 class="card-title">Dental Plan</h3>
+                            <p class="card-text">Our Dental Plan is a saving's plan for the dental care of you and your
+                                family. For just $10 per month, deducted from your credit card, you can enjoy
+                                preferential rates and certain treatments covered 100% from the second month, which can
+                                only be used annually.</p>
+                            <ul>
+                                <li>This amount will be fixed and will not increase over time.</li>
+                                <li>Family members can be added at $8 per person.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DentalHealth Card -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="{% static 'pages/img/dental-card.jpg' %}" class="card-img-top"
+                             alt="DentalHealth Card">
+                        <div class="card-body">
+                            <h3 class="card-title">DentalHealth Card</h3>
+                            <p class="card-text">The DentalHealth Card is the first dental protection card with
+                                preferential discounts for you and 6 additional members.</p>
+                            <ul>
+                                <li>One-time annual cost: $35</li>
+                                <li>Renewal cost: $25</li>
+                                <li>Benefits include:</li>
+                                <ul>
+                                    <li>Free evaluations.</li>
+                                    <li>24/7 dental emergencies (123 Main Street, Anytown).</li>
+                                    <li>50% off on basic dentistry (cleaning and scaling).</li>
+                                    <li>20% off on general, preventive, and X-rays (panoramic, periapical, and
+                                        cephalometric).
+                                    </li>
+                                    <li>10% off on cosmetic dentistry, orthodontics, oral rehabilitation, and
+                                        implants.
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DentalHealth Kids -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="{% static 'pages/img/dental-kids.jpg' %}" class="card-img-top"
+                             alt="DentalHealth Kids">
+                        <div class="card-body">
+                            <h3 class="card-title">DentalHealth Kids</h3>
+                            <p class="card-text">At DentalHealth, we prioritize children. Our DentalHealth Kids program
+                                focuses on caring for our patients from prenatal stages to high school graduation,
+                                ensuring they reach adulthood with healthy and straight teeth.</p>
+                            <p class="card-text">At all DentalHealth locations, we have dedicated spaces for children to
+                                enjoy their visit. They will be cared for by specialists in pediatric dentistry and
+                                orthodontics, ensuring their experience is as pleasant and painless as possible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 {% endblock %}

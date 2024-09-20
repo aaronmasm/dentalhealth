@@ -1,5 +1,76 @@
 {% extends "base.html" %}
+{% load static %}
+
 {% block title %}Clinics{% endblock title %}
+
+{% block app_css %}
+    <!-- Link to the specific CSS file for this page -->
+    <link href="{% static 'pages/css/pages.css' %}" rel="stylesheet">
+{% endblock %}
+
 {% block content %}
-    <h1>Clinics</h1>
+    <!-- Main container for the page content -->
+    <div class="container my-5">
+
+        <!-- Banner section for the "Clinics" page -->
+        <section class="banner clinic-banner text-black-50 text-center p-5 bg-primary rounded">
+            <h1 class="display-4 fw-normal">Clinics</h1>
+            <p class="lead fw-normal">Explore our clinic locations and find the nearest one to you.</p>
+        </section>
+
+        <!-- Clinics Section -->
+        <section class="clinics-section mt-5">
+            <div class="row text-center">
+
+                <!-- Main Clinic -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-sm border-primary">
+                        <!-- Clinic Image -->
+                        <img src="{% static 'pages/img/clinics/downtown.jpg' %}" class="card-img-top" alt="Main Clinic Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Main Clinic - Downtown</h5>
+                            <p class="card-text">Address: 123 Main St, Downtown City</p>
+                            <p class="card-text">Phone: (123) 456-7890</p>
+                            <p class="text-muted">Our main clinic, located in the heart of downtown, offers all services
+                                and is home to our most experienced staff.</p>
+                            <span class="badge bg-primary">Main Location</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Westside Clinic -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <!-- Clinic Image -->
+                        <img src="{% static 'pages/img/clinics/westside.jpeg' %}" class="card-img-top"
+                             alt="Westside Clinic Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Westside Clinic</h5>
+                            <p class="card-text">Address: 456 West Ave, Westside</p>
+                            <p class="card-text">Phone: (987) 654-3210</p>
+                            <p class="text-muted">Our Westside location is ideal for patients on the western part of the
+                                city, offering a full range of dental services.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- North Clinic -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <!-- Clinic Image -->
+                        <img src="{% static 'pages/img/clinics/north.jpeg' %}" class="card-img-top" alt="North Clinic Image">
+                        <div class="card-body">
+                            <h5 class="card-title">North Clinic</h5>
+                            <p class="card-text">Address: 789 North Rd, Uptown</p>
+                            <p class="card-text">Phone: (555) 123-4567</p>
+                            <p class="text-muted">Our North Clinic is perfect for patients residing in uptown, providing
+                                convenient access to top-notch dental care.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
 {% endblock %}

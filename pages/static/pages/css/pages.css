@@ -1,8 +1,24 @@
 .banner {
-    background: url('../img/woman-patient-dentist.jpg') no-repeat center center;
+    background: no-repeat center center;
     background-size: cover;
-    border-radius: 10px;
-    padding: 50px;
-    color: white;
-    text-align: center;
+}
+
+.about-us-banner {
+    background-image: url('../img/banners/about-us.jpg');
+}
+
+.services-banner {
+    background-image: url('../img/banners/services.jpg');
+}
+
+.specialties-banner {
+    background-image: url('../img/banners/specialties.jpg');
+}
+
+.dentists-banner {
+    background-image: url('../img/banners/dentists.jpg');
+}
+
+.clinic-banner {
+    background-image: url('../img/banners/clinic-reception.jpg');
 }

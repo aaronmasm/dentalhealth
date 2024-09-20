@@ -1,5 +1,169 @@
 {% extends "base.html" %}
-{% block title %}Specialties{% endblock title %}
+{% load static %}
+
+{% block title %}Specialties{% endblock %}
+
+{% block app_css %}
+    <!-- Link to the specific CSS file for this page -->
+    <link href="{% static 'pages/css/pages.css' %}" rel="stylesheet">
+{% endblock %}
+
 {% block content %}
-    <h1>Specialties</h1>
+    <!-- Main container for the page content -->
+    <div class="container my-5">
+
+        <!-- Banner section for the "Specialties" page -->
+        <section class="banner specialties-banner text-black-50 text-center p-5 bg-primary rounded">
+            <h1 class="display-4 fw-normal">Specialties</h1>
+            <p class="lead fw-normal">Learn more about our specialties.</p>
+        </section>
+
+        <!-- Specialties Section -->
+        <section class="my-5">
+            <div class="row">
+                <!-- Aesthetic Dentistry -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="{% static 'pages/img/aesthetic-dentistry.jpg' %}"
+                             class="card-img-top" alt="Aesthetic Dentistry">
+                        <div class="card-body">
+                            <h3 class="card-title">Aesthetic Dentistry</h3>
+                            <p class="card-text">A beautiful smile is a powerful personal tool. Whether through teeth
+                                whitening or porcelain veneers, we can help you achieve a smile that will open many
+                                doors.</p>
+                            <p class="card-text">Aesthetic Dentistry also focuses on replacing old amalgam fillings with
+                                resin restorations.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Periodontics -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="{% static 'pages/img/periodontics.jpg' %}"
+                             class="card-img-top" alt="Periodontics">
+                        <div class="card-body">
+                            <h3 class="card-title">Periodontics</h3>
+                            <p class="card-text">Periodontics involves the diagnosis and treatment of issues with the
+                                supporting tissues of the teeth, such as gums and the underlying bone (gingivitis and
+                                periodontal disease).</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oral Rehabilitation -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="{% static 'pages/img/oral-rehabilitation.jpg' %}"
+                             class="card-img-top" alt="Oral Rehabilitation">
+                        <div class="card-body">
+                            <h3 class="card-title">Oral Rehabilitation</h3>
+                            <p class="card-text">Oral Rehabilitation focuses on restoring function and aesthetics in
+                                cases where teeth have been lost due to decay or periodontal disease. Treatments include
+                                fixed (crowns, bridges) and removable (dentures) prostheses.</p>
+                            <p class="card-text">It also addresses issues related to temporomandibular joints and
+                                bruxism.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Implants -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="{% static 'pages/img/implants.jpg' %}"
+                             class="card-img-top" alt="Implants">
+                        <div class="card-body">
+                            <h3 class="card-title">Implants</h3>
+                            <p class="card-text">The best alternative for replacing lost teeth is dental implants.
+                                Through a simple, painless procedure, these artificial roots are inserted into the
+                                remaining bone to reconstruct the external part of the tooth, restoring function and
+                                aesthetics.</p>
+                            <p class="card-text">Implants offer the advantage of eliminating the need to wear down
+                                neighboring teeth as with fixed bridges.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endodontics -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="{% static 'pages/img/endodontic.jpg' %}"
+                             class="card-img-top" alt="Endodontics">
+                        <div class="card-body">
+                            <h3 class="card-title">Endodontics</h3>
+                            <p class="card-text">When the inner part of the tooth has been infected due to deep decay,
+                                endodontic treatment involves cleaning and sealing the dental canals to save the
+                                affected tooth. The external portion of the tooth can then be reconstructed.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orthodontics -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="{% static 'pages/img/orthodontics.jpg' %}"
+                             class="card-img-top" alt="Orthodontics">
+                        <div class="card-body">
+                            <h3 class="card-title">Orthodontics</h3>
+                            <p class="card-text">This specialty focuses on diagnosing and treating misalignments of the
+                                teeth and/or jawbones. Typically, the treatment involves placing brackets and thin wires
+                                to align the teeth and adjust the bite. Ask about Invisalign and Invisible Orthodontics
+                                (no brackets!).</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pediatric Dentistry -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="{% static 'pages/img/pediatric-dentistry.jpg' %}"
+                             class="card-img-top" alt="Pediatric Dentistry">
+                        <div class="card-body">
+                            <h3 class="card-title">Pediatric Dentistry</h3>
+                            <p class="card-text">This specialty covers the care of patients from prenatal stages to the
+                                final year of schooling. Its main focus is prevention, ensuring children reach adulthood
+                                with healthy, aligned teeth through proper guidance.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oral Surgery -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="{% static 'pages/img/oral-surgery.jpg' %}"
+                             class="card-img-top" alt="Oral Surgery">
+                        <div class="card-body">
+                            <h3 class="card-title">Oral Surgery</h3>
+                            <p class="card-text">The most common surgical interventions in Dentistry include tooth
+                                extractions, whether for damaged teeth that are not viable for reconstruction or third
+                                molars (wisdom teeth).</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comprehensive Dentistry -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="{% static 'pages/img/comprehensive-dentistry.jpg' %}"
+                             class="card-img-top" alt="Comprehensive Dentistry">
+                        <div class="card-body">
+                            <h3 class="card-title">Comprehensive Dentistry</h3>
+                            <p class="card-text">It Encompasses common dental treatments, such as scaling, prophylaxis,
+                                and
+                                restorations.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 {% endblock %}

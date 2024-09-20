@@ -1,5 +1,85 @@
 {% extends "base.html" %}
-{% block title %}Dentists{% endblock title %}
+{% load static %}
+
+{% block title %}Dentists{% endblock %}
+
+{% block app_css %}
+    <!-- Link to the specific CSS file for this page -->
+    <link href="{% static 'pages/css/pages.css' %}" rel="stylesheet">
+{% endblock %}
+
 {% block content %}
-    <h1>Dentists</h1>
+    <!-- Main container for the page content -->
+    <div class="container my-5">
+
+        <!-- Banner section for the "Dentists" page -->
+        <section class="banner dentists-banner text-black-50 text-center p-5 bg-primary rounded">
+            <h1 class="display-4 fw-normal">Dentists</h1>
+            <p class="lead fw-normal">Meet our team of expert dentists.</p>
+        </section>
+
+        <!-- Dentists Section -->
+        <section class="dentists-section mt-5">
+            <div class="row text-center">
+
+                <!-- Dentist 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="{% static 'pages/img/dentists/john-doe.jpg' %}" class="card-img-top rounded-circle mx-auto mt-3"
+                             alt="Dr. John Doe">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. John Doe</h5>
+                            <p class="card-text health-text-color">Specialist in Esthetic Dentistry</p>
+                            <p class="text-muted">Dr. John Doe has over 15 years of experience in esthetic dental
+                                procedures, ensuring the perfect smile for all patients.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dentist 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="{% static 'pages/img/dentists/jane-smith.jpg' %}" class="card-img-top rounded-circle mx-auto mt-3"
+                             alt="Dr. Jane Smith">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Jane Smith</h5>
+                            <p class="card-text health-text-color">Periodontist</p>
+                            <p class="text-muted">Dr. Jane Smith is a leading periodontist specializing in gum health
+                                and treatments to prevent periodontitis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dentist 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="{% static 'pages/img/dentists/alan-brown.jpg' %}" class="card-img-top rounded-circle mx-auto mt-3"
+                             alt="Dr. Alan Brown">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Alan Brown</h5>
+                            <p class="card-text health-text-color">Endodontist</p>
+                            <p class="text-muted">Dr. Alan Brown is known for his precision and care in root canal
+                                treatments, saving patients' teeth with advanced techniques.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dentist 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="{% static 'pages/img/dentists/emily-white.jpg' %}" class="card-img-top rounded-circle mx-auto mt-3"
+                             alt="Dr. Emily White">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Emily White</h5>
+                            <p class="card-text health-text-color">Orthodontist</p>
+                            <p class="text-muted">Dr. Emily White is an expert in orthodontics, offering treatments for
+                                braces and Invisalign to correct teeth alignment.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
 {% endblock %}
